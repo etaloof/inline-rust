@@ -1,0 +1,19 @@
+[package]
+name = "inline-rust"
+version = "0.1.0"
+authors = ["Stefan Lukas <afc11hn@hotmail.de>"]
+description = "A procedural macro for running arbitrary rust code at compile time"
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[features]
+default = []
+debug = []
+
+[dependencies]
+quote = "1.0"
+tempdir = "0.3"
+syn = "1.0"
+proc-macro2 = "1.0"
